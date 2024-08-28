@@ -61,7 +61,7 @@ const bot = mineflayer.createBot({
       // This function gets called when a new subscriber is detected
       console.log(`We now have ${newSubscriberCount} subscribers!`);
       bot.chat("/say new subscriber detected");
-        bot.chat("/kill faizan45640");
+        bot.chat("/kill @e[type=minecraft:player]");
     }
     
     setInterval(checkSubscribers, 60000);
